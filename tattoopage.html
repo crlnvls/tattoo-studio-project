@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tattoo Studio London</title>
+   <link rel="stylesheet" href="tattoopage.css">
+  </head>
+  <body>
+    
+    <header id="homeLink">
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/028/768/original/skull.png?1646710516" alt="skull and snake" class="logo" />
+      </div>
+      <ul class="homeUl">
+        <li class="homepage"><a href="#homeLink" class="links">Home</a></li>
+        <li class="homepage"><a href="#studioLink" class="links">Studio</a></li>
+        <li class="homepage">
+          <a href="#artistsLink" class="links">Artists</a>
+        </li>
+        <li class="homepage">
+          <a href="#contactLink" class="links">Contact</a>
+        </li>
+      </ul>
+      <div>
+
+      </header>
+      <h1 id="studioLink">
+        Welcome to <br />
+        Tattoo Studio London
+      </h1>
+      <div class="studioInfo">
+        <img
+        class="place"
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/028/772/original/IMG_6907-1568x1045.jpeg?1646710567"
+        alt="tattoo studio"
+        />
+        <p>
+          Tattoo Studio London focus has always been on clean and original
+          tattoos, spanning a range of styles. We custom design all our own
+          artwork and ensure that every tattoo is solid whilst being executed with
+          a high level of precision. Our artist's aim is to interpret your ideas
+          into something unique that will stand the test of time.
+        </p>
+      </div>
+      <h2 id="artistsLink">Meet our Artists</h2>
+      
+      <ul class="artistsUl">
+        <li>
+          <div class="tattooDiv">
+            <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/028/769/original/artist1.jpeg?1646710537"
+            alt="female tattoo artist"
+            class="artists"
+            />
+            <div class="tattooStyle">
+              <div>
+                Ashley
+                <hr />
+                Fineline & Traditional
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="tattooDiv">
+            <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/028/770/original/artist2.jpeg?1646710543"
+            alt="female tattoo artist"
+            class="artists"
+            />
+            <div class="tattooStyle">
+              <div>
+                Beatriz
+                <hr />
+                Color Japanese
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="tattooDiv">
+            <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/028/771/original/artist3.jpeg?1646710550"
+            alt="female tattoo artist"
+            class="artists"
+            />
+            <div class="tattooStyle">
+              <div>
+                Charlotte
+                <hr />
+                Graphic Blackwork
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <button>Book a consultation</button>
+      
+      <h3 id="contactLink">Contact Us</h3>
+      <footer>
+        <ul class="contactUl">
+          <li class="contactLi">
+            <div class="headContact">Location <br /></div>
+            269 Camden Highstreet <br />
+            London <br />
+            NW1 7BX
+          </li>
+          <li class="contactLi">
+            <div class="headContact">Opening hours <br /></div>
+            Monday to Friday 11:00 - 19:00
+          </li>
+          <li class="contactLi">
+            <div class="headContact">Studio Social <br /></div>
+            
+            <a href="https://outlook.live.com" target="_blank">
+              <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/028/775/original/email.png?1646710595" alt="email" class="social" />
+            </a>
+            <a href="https://www.instagram.com/?hl=en" target="_blank">
+              <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/028/773/original/instagram.png?1646710585" alt="instagram" class="social" />
+            </a>
+            <a href="https://en-gb.facebook.com" target="_blank">
+              <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/028/774/original/facebook.png?1646710590" alt="facebook" class="social" />
+            </a>
+          </li>
+        </ul>
+      </footer>
+  
+      <script>
+      function book() {
+        let name = prompt("What's your name?");
+        let email = prompt("What's your email?");
+        let date = prompt("Preferred booking date and time");
+        let artist = prompt(
+          "Which artist would you like to arrange an appointment with?"
+        );
+        artist = artist.toUpperCase();
+        
+        
+        if (artist === "ASHLEY" | artist === "BEATRIZ" | artist === "CHARLOTTE") {
+
+        alert(`Thank you ${name}! ${artist} will get in touch with you shortly for more details.`);
+        } else {
+          alert(`Sorry you need to choose an artists from our team. Thank you.`);
+
+        }
+      }
+
+      let bookButton = document.querySelector("button");
+      bookButton.addEventListener("click", book);
+    </script>
+  </body>
+</html>
